@@ -1,0 +1,25 @@
+article{
+  color: gray;  
+
+}
+header{
+    color: hotpink;
+    background-color: honeydew;
+}
+footer{
+    
+    background-color: honeydew;
+
+}
+div{
+    float: left;
+    max-width: 50%;
+    padding: 1em;
+    margin: .5em; ;
+    border: none;
+}
+#foot{
+    position: initial, bottom;
+    width: 100%;
+    border: 1px solid black;
+}

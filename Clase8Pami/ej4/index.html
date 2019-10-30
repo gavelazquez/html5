@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./personas.js"></script>
+    <title>array foreach</title>
+</head>
+
+<body>
+
+    <button id="btn">1</button>
+    <button id="btn2">2</button>
+
+    <script>
+
+        let numeros = [2, 5, 7, 8, 10];
+        let nombres = ["Juan", "Zoilo", "andrea", "Andrea", "Miguel"];
+
+        /*var x = numeros.reduce(function (a, b) {
+            console.log("anterior: " + a);
+            console.log("actual: " + b);           
+            return a + b;
+        }, 0);*/
+        var x = numeros.reduce((a, b) => a + b);
+        console.log(x);
+
+        let cantNombres = nombres.reduce(function (ant, act) {
+            return ant + 1;
+        }, 0)
+
+        //console.log(cantNombres);
+
+        let suma = 0;
+
+        for (let i = 0; i < numeros.length; i++) {
+            suma = suma + numeros[i];
+        }
+
+        //console.log(suma);
+
+        let promEdadFem = personas.filter(p => p.genero === 'Female')
+            .map(p => p.edad)
+            .reduce((ant, actual, indice, arr) => ant + actual / arr.length, 0);
+
+        console.log(promEdadFem.toFixed(2));
+
+        let vec = [2, 3, 7];
+
+        console.log(vec.reduce((ant, actual, indice, arr) => ant + actual / arr.length, 0));
+    </script>
+
+</body>
+
+</html>

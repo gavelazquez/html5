@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./personas.js"></script>
+    <title>array foreach</title>
+</head>
+<body>
+
+    <button id="btn">1</button>
+    <button id="btn2">2</button>
+
+    <script>    
+    
+    let numeros = [12, 1, 30, 10, 34, 100];
+    let nombres = ["Juan", "Zoilo", "andrea", "Andrea", "Miguel"];
+
+    /*numeros.forEach(foo );
+
+    function foo(a, b, c){
+        console.log(a);
+        console.log(b);
+        console.log(c);
+    }*/
+
+    console.log( numeros);
+
+    /*for( let i = 0; i < numeros.length; i++){
+        numeros[i] = 2 * numeros[i];
+    }*/
+
+    var dobles = [];
+    numeros.forEach(function(a){
+        dobles.push( a*2);
+    });
+
+    var cuadrados = numeros.map( a=> a*a);
+
+    var cuad= [];
+    for( let i=0; i < numeros.lenght; i++){
+        cuad.push(numeros[i]* numeros[i]);
+    }
+    
+    let nombreGen = personas.map( function(a){
+        return a.first_name.length;
+    });
+
+
+    console.log(nombreGen);
+   // console.log(cuadrados);
+   
+    </script>
+    
+</body>
+</html>

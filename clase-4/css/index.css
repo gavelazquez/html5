@@ -6,3 +6,27 @@ input{
     border-bottom: 1px solid black;
 
 }
+p{
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    color: rgb(49, 49, 121);
+}
+textarea{
+    width: 98%;
+    align-self: center;
+    
+}
+div{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 12px;
+    width: 450px;
+    margin: 0 auto;
+}
+#btn{
+    border: 1px solid lightblue;
+    background-color: lightblue;
+    float: right;
+}
+fieldset{
+    background-color: rgb(252, 245, 238);
+}

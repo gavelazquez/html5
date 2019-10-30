@@ -1,0 +1,9 @@
+div{
+    max-width: 650px;
+}
+img{
+    float: left;
+    margin: 1em;
+    padding: .5em;
+    border: 1px solid beige;
+}
