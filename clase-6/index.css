@@ -1,0 +1,43 @@
+div{
+
+    width: 50%;
+}
+p {
+    text-align: justify;
+    line-height: 200%;
+    text-indent: 2em;
+}
+p:first-letter{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium';
+    vertical-align: middle;
+}
+header a{
+    padding: 0 18px 0 0;
+    background: #FFF url(imagenes/dolar.png) no-repeat right center;
+}
+a.boton{
+    text-decoration: none;
+    background: blue;
+    color: white;
+    border: 1px outset #CCC;
+    padding: .1em .5em;
+}
+a.boton2{
+    text-decoration: none;
+    background: #FFF url(imagenes/images2.png);
+    border: 1px outset;
+    padding: 40px 30px;
+}
+#mas{
+    font-size: 2em;
+    font-weight: bold;
+}
+#hola{
+    display: none;
+}
+#mas:hover #hola{
+    display: inline;
+}
