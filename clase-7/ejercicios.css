@@ -1,0 +1,31 @@
+h1::before{
+    content: "Esto es ";
+    color: blue;
+}
+h2::after{
+    content: " un after";
+    color: red;
+}
+#name::placeholder{
+    background-color: black;
+    color: gold;
+}
+p:not(.nota)::first-letter{
+    color: blue;
+    font-size: 200%;
+    text-transform: capitalize;
+}
+
+.nota{
+    width: 50%;
+    margin-left: 10%;
+}
+.nota::marker{
+    content: "Note " counter(note-counter)":";
+    text-align: left;
+}
+p::selection{
+    color: gold;
+    background-color: red;
+
+}

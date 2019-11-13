@@ -1,0 +1,55 @@
+body{
+    background-color: coral;
+}
+div > span {
+    font-family: Arial, Helvetica, sans-serif ;
+    font-weight: bold;
+    text-decoration-line: underline;
+    align-content: center;
+    
+}
+legend{
+    color: yellow;
+    font-weight: bold;
+}
+body > div{
+    width: 50%;
+    margin: 0 auto;
+}
+label{
+    /*width: 99%;
+    margin: 1em;
+
+    float: left;*/
+    display: block;
+}
+input, select {
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-bottom: 1px solid black;
+    background-color: coral;
+
+    width: 99%;
+    /*float: left;*/
+    display: block;
+    }
+.botones input{
+    background-color: gray;
+    color:  blue;
+    border: none;
+    width: 45%;
+    float: left;
+    margin: 1em;
+    padding: 5%;
+}
+dfn{
+    float: left;
+}
+div.container * div{
+    display: none;
+}
+label:hover div{
+    display: inline;
+}

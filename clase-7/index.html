@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <span>COMPLETE EL FORMULARIO</span>
+        <form action="">
+            <fieldset>
+                <legend>Informacion personal</legend>
+                <label for="name"><span>Nombre</span>
+                    <input type="text" name="name" id="name" minlength="3" required> <dfn>*</dfn>
+                    <div>Ingrese un nombre de por lo menos tres letras.</div>
+                    
+                </label>
+                <label for="email"><span>Email</span>
+                    <input type="email" name="email" id="email" required> <dfn>*</dfn>
+                    <div>Ingrese un email</div>
+                </label>
+            </fieldset>
+            <fieldset>
+                    <legend>Informacion del vehiculo</legend>
+                    <label for="marcas"><span>Marcas</span>
+                        <select name="marcas" id="marcas" required>
+                            <option value="" disabled selected hidden>Elija una...</option>
+                            <option value="1">Ford</option>
+                            <option value="2">Honda</option>
+                            <option value="3">VW</option>
+                            <option value="4">AUDI</option>
+                        </select> <dfn>*</dfn>
+                        <div>Ingrese una marca</div>
+
+                    </label>
+                    <label for="anio"><span>Ingrese Año</span>
+                        <input type="number" id="anio" name="anio" min="1960" max="2020" step="1" required> <dfn>*</dfn>
+                        <div>Ingrese anño</div>
+                    </label>
+                    
+            </fieldset>
+            <fieldset class="botones">
+                <input type="submit" value="Enviar" id="enviar">
+                <input type="reset" value="Borrar">
+            </fieldset>
+            <div class="dfn">
+                <dfn>* Campos requeridos</dfn>
+            </div>
+        </form>
+        
+        <div class="info">
+            <h4>Error, ingrese un valor correcto</h4>
+        </div>
+    </div>
+</body>
+</html>

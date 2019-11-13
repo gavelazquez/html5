@@ -1,0 +1,97 @@
+body {
+    background-color: salmon;
+}
+
+input,
+select,
+input:focus {
+    border: 0;
+    border-bottom: 1px solid gray;
+    background-color: transparent;
+    width: 100%;
+}
+
+option:nth-child(odd){
+    background-color: rgb(237, 185, 154);
+}
+
+option:nth-child(even){
+    background-color: salmon;
+}
+
+
+legend {
+    color: gold;
+    font-weight: bold;
+}
+
+div > span {
+    padding-top: 10px;
+    text-align: center;
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline;
+}
+
+fieldset label div {
+    display: none;
+}
+
+fieldset label span {
+    display: block;
+}
+
+.container {
+    /* margin: 10px 0; */
+    width: 50%;
+    margin: 10px auto;
+}
+
+.dfn {
+    margin-top: 10px;
+}
+
+.botones {
+    margin-top: 6px;
+    
+    height: 50px;
+}
+
+.info {
+    display: none;
+}
+
+label[for="name"]:hover div,
+label[for="email"]:hover div,
+label[for="marcas"]:hover div,
+label[for="anio"]:hover div {
+    display: inline
+}
+
+label input:focus:invalid {
+    background-color: red;
+}
+
+label input:valid:focus {
+    background-color: green;
+}
+
+form:valid #enviar:enabled {
+    background-color: red;
+    color: green;
+    display: block;
+}
+
+
+.botones input {
+    margin: 0 auto;
+    padding: 0;
+    width: 49%;
+    height: 50px;
+    background-color: gray;
+    color: blue;
+}
+
+.botones input:enabled:hover {
+    background-color: black;
+}
