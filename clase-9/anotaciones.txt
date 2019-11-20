@@ -1,0 +1,13 @@
+Administradores de paquetes para Node.js
+
+Mas utilizados:
+
+- npm
+- yarn (de Google, mas reciente)
+
+
+
+Casi obsoletos:
+
+- Bower
+- Yeoman
